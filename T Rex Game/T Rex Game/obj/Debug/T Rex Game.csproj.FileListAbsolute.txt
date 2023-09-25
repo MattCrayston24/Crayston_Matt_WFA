@@ -1,0 +1,10 @@
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\bin\Debug\T Rex Game.exe.config
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\bin\Debug\T Rex Game.exe
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\bin\Debug\T Rex Game.pdb
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T Rex Game.csproj.AssemblyReference.cache
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T_Rex_Game.Form1.resources
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T_Rex_Game.Properties.Resources.resources
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T Rex Game.csproj.GenerateResource.cache
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T Rex Game.csproj.CoreCompileInputs.cache
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T Rex Game.exe
+C:\CODE 2023\Crayston_Matt_WFA\T Rex Game\T Rex Game\obj\Debug\T Rex Game.pdb
