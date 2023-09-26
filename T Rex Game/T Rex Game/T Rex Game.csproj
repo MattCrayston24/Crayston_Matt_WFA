@@ -92,5 +92,29 @@
   <ItemGroup>
     <None Include="Resources\running.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondtrex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1466893_b7082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signboard-PNG-Pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1954963-sable-sur-la-plage-pour-texture-ou-fond-gratuit-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-370799.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16251418-texture-de-fond-en-bois.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1161948652-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-sky-wallpaper-clear-air-heavenly-background-illustration-vector.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

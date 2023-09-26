@@ -81,7 +81,7 @@ namespace T_Rex_Game
                     {
                         gameTimer.Stop();
                         trex.Image = Properties.Resources.dead;
-                        txtscore.Text += "Press R to restart the game!";
+                        txtscore.Text += " Press R to restart the game!";
                         isGameOver = true;
                     }
                 }

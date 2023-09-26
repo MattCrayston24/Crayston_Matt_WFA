@@ -63,9 +63,69 @@ namespace T_Rex_Game.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1466893_b7082 {
+            get {
+                object obj = ResourceManager.GetObject("1466893_b7082", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16251418_texture_de_fond_en_bois {
+            get {
+                object obj = ResourceManager.GetObject("16251418-texture-de-fond-en-bois", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1954963_sable_sur_la_plage_pour_texture_ou_fond_gratuit_photo {
+            get {
+                object obj = ResourceManager.GetObject("1954963-sable-sur-la-plage-pour-texture-ou-fond-gratuit-photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blue_sky_wallpaper_clear_air_heavenly_background_illustration_vector {
+            get {
+                object obj = ResourceManager.GetObject("blue-sky-wallpaper-clear-air-heavenly-background-illustration-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dead {
             get {
                 object obj = ResourceManager.GetObject("dead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondtrex {
+            get {
+                object obj = ResourceManager.GetObject("fondtrex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1161948652_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1161948652-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +156,26 @@ namespace T_Rex_Game.Properties {
         internal static System.Drawing.Bitmap running {
             get {
                 object obj = ResourceManager.GetObject("running", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Signboard_PNG_Pic {
+            get {
+                object obj = ResourceManager.GetObject("Signboard-PNG-Pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb_1920_370799 {
+            get {
+                object obj = ResourceManager.GetObject("thumb-1920-370799", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
