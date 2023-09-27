@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,9 @@ namespace T_Rex_Game
         Random rand = new Random();
         int position;
         bool isGameOver = false;
+        bool isObstacleAerialEnabled = false;
+        bool ducking = false;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -33,7 +37,6 @@ namespace T_Rex_Game
         public Form1()
         {
             InitializeComponent();
-
             GameReset();
         }
 
@@ -67,24 +70,42 @@ namespace T_Rex_Game
 
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Tag == "obstacle")
+                if (x is PictureBox)
                 {
-                    x.Left -= obstacleSpeed;
-
-                    if (x.Left < -100)
+                    if ((string)x.Tag == "obstacle" || ((string)x.Tag == "obstacleaerien" && score > 5))
                     {
-                        x.Left = this.ClientSize.Width + rand.Next(200, 500) + (x.Width * 15);
-                        score++;
-                    }
+                        x.Left -= obstacleSpeed;
 
-                    if (trex.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        gameTimer.Stop();
-                        trex.Image = Properties.Resources.dead;
-                        txtscore.Text += " Press R to restart the game!";
-                        isGameOver = true;
+                        if (x.Left < -100)
+                        {
+                            x.Left = this.ClientSize.Width + rand.Next(200, 500) + (x.Width * 15);
+                            if ((string)x.Tag == "obstacle")
+                            {
+                                score++;
+                            }
+                        }
+
+                        if (trex.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gameTimer.Stop();
+                            trex.Image = Properties.Resources.dead;
+                            txtscore.Text += " Press R to restart the game!";
+                            isGameOver = true;
+                        }
                     }
                 }
+            }
+
+            if (score > 20 && !isObstacleAerialEnabled)
+            {
+                isObstacleAerialEnabled = true;
+                PictureBox obstacleAerien = new PictureBox();
+                obstacleAerien.Image = Properties.Resources.obstacleaerien; 
+                obstacleAerien.Size = new Size(40, 40); 
+                obstacleAerien.Tag = "obstacleaerien";
+                obstacleAerien.Left = this.ClientSize.Width + rand.Next(200, 500) + (obstacleAerien.Width * 15);
+                obstacleAerien.Top = 290 - obstacleAerien.Height; 
+                this.Controls.Add(obstacleAerien);
             }
 
             if (score > 10)
@@ -96,11 +117,11 @@ namespace T_Rex_Game
             {
                 obstacleSpeed = 18;
             }
+
             if (score > 50)
             {
                 obstacleSpeed = 20;
             }
-
         }
 
         private void keyisdown(object sender, KeyEventArgs e)
@@ -108,6 +129,13 @@ namespace T_Rex_Game
             if (e.KeyCode == Keys.Space && jumping == false)
             {
                 jumping = true;
+            }
+
+            if (e.KeyCode == Keys.Down && !jumping)
+            {
+                ducking = true;
+                trex.Top = 250;
+                trex.Image = Properties.Resources.duck2;
             }
         }
 
@@ -118,9 +146,16 @@ namespace T_Rex_Game
                 jumping = false;
             }
 
-            if(e.KeyCode == Keys.R && isGameOver == true)
+            if (e.KeyCode == Keys.R && isGameOver == true)
             {
                 GameReset();
+            }
+
+            if (e.KeyCode == Keys.Down)
+            {
+                ducking = false;
+                trex.Top = 290;
+                trex.Image = Properties.Resources.running;
             }
         }
 
@@ -138,13 +173,18 @@ namespace T_Rex_Game
 
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Tag == "obstacle")
+                if (x is PictureBox)
                 {
-                    position = this.ClientSize.Width + rand.Next(500, 800) + (x.Width * 10);
-
-                    x.Left = position;
+                    if ((string)x.Tag == "obstacle")
+                    {
+                        position = this.ClientSize.Width + rand.Next(500, 800) + (x.Width * 10);
+                        x.Left = position;
+                    }
+                    else if ((string)x.Tag == "obstacleaerien")
+                    {
+                        x.Left = this.ClientSize.Width + 2000; 
+                    }
                 }
-
             }
 
             gameTimer.Start();
@@ -156,4 +196,3 @@ namespace T_Rex_Game
         }
     }
 }
-

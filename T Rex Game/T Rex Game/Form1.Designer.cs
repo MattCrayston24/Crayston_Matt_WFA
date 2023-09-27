@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.obstacleaerien = new System.Windows.Forms.PictureBox();
             this.txtscore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.trex = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.obstacleaerien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -46,12 +49,24 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.MainGameTimerEvent);
             // 
+            // obstacleaerien
+            // 
+            this.obstacleaerien.Image = global::T_Rex_Game.Properties.Resources.obstacleaerien;
+            this.obstacleaerien.Location = new System.Drawing.Point(669, 300);
+            this.obstacleaerien.Name = "obstacleaerien";
+            this.obstacleaerien.Size = new System.Drawing.Size(97, 71);
+            this.obstacleaerien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.obstacleaerien.TabIndex = 3;
+            this.obstacleaerien.TabStop = false;
+            this.obstacleaerien.Tag = "obstacleaerien";
+            this.obstacleaerien.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // txtscore
             // 
             this.txtscore.AutoSize = true;
             this.txtscore.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtscore.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtscore.Image = global::T_Rex_Game.Properties.Resources.blue_sky_wallpaper_clear_air_heavenly_background_illustration_vector;
+            this.txtscore.Image = ((System.Drawing.Image)(resources.GetObject("txtscore.Image")));
             this.txtscore.Location = new System.Drawing.Point(43, 37);
             this.txtscore.Name = "txtscore";
             this.txtscore.Size = new System.Drawing.Size(135, 33);
@@ -72,7 +87,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox4.Image = global::T_Rex_Game.Properties.Resources.obstacle_2;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(597, 376);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 33);
@@ -84,7 +99,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox3.Image = global::T_Rex_Game.Properties.Resources.obstacle_1;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(489, 364);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 46);
@@ -95,7 +110,7 @@
             // 
             // trex
             // 
-            this.trex.Image = global::T_Rex_Game.Properties.Resources.running;
+            this.trex.Image = ((System.Drawing.Image)(resources.GetObject("trex.Image")));
             this.trex.Location = new System.Drawing.Point(165, 367);
             this.trex.Name = "trex";
             this.trex.Size = new System.Drawing.Size(40, 43);
@@ -111,6 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.obstacleaerien);
             this.Controls.Add(this.txtscore);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
@@ -121,6 +137,7 @@
             this.Text = "T Rex Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
+            ((System.ComponentModel.ISupportInitialize)(this.obstacleaerien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -138,6 +155,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label txtscore;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.PictureBox obstacleaerien;
     }
 }
 
