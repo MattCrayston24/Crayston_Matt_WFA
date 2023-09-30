@@ -23,6 +23,8 @@ namespace T_Rex_Game
         bool isGameOver = false;
         bool isObstacleAerialEnabled = false;
         bool ducking = false;
+        int trexHeight = 40;
+        int duckedTrexHeight = 20;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -134,8 +136,11 @@ namespace T_Rex_Game
             if (e.KeyCode == Keys.Down && !jumping)
             {
                 ducking = true;
-                trex.Top = 250;
+                trex.Top = 500;
                 trex.Image = Properties.Resources.duck2;
+
+                // Ajustez la hauteur de la boîte de collision en position de canard
+                trex.Height = duckedTrexHeight;
             }
         }
 
@@ -156,6 +161,9 @@ namespace T_Rex_Game
                 ducking = false;
                 trex.Top = 290;
                 trex.Image = Properties.Resources.running;
+
+                // Rétablissez la hauteur de la boîte de collision à sa valeur d'origine
+                trex.Height = trexHeight;
             }
         }
 

@@ -93,6 +93,16 @@ namespace T_Rex_Game.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aa_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("aa-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_sky_wallpaper_clear_air_heavenly_background_illustration_vector {
             get {
                 object obj = ResourceManager.GetObject("blue-sky-wallpaper-clear-air-heavenly-background-illustration-vector", resourceCulture);
