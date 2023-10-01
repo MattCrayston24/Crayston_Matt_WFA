@@ -120,10 +120,13 @@
     <None Include="Resources\down.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Capture_d_écran_2023-09-27_140058-removebg-preview.png" />
+    <None Include="Resources\obstacleaerien1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\obstacleaerien1.png" />
+    <None Include="Resources\aa-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ducker.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

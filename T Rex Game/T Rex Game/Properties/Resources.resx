@@ -133,6 +133,9 @@
   <data name="fondtrex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondtrex.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aa-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aa-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1954963-sable-sur-la-plage-pour-texture-ou-fond-gratuit-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1954963-sable-sur-la-plage-pour-texture-ou-fond-gratuit-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +153,9 @@
   </data>
   <data name="obstacle-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\obstacle-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ducker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ducker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blue-sky-wallpaper-clear-air-heavenly-background-illustration-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue-sky-wallpaper-clear-air-heavenly-background-illustration-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +175,7 @@
   <data name="obstacleaerien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\obstacleaerien1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aa-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aa-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ducker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ducker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

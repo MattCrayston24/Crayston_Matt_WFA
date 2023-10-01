@@ -143,6 +143,26 @@ namespace T_Rex_Game.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ducker {
+            get {
+                object obj = ResourceManager.GetObject("ducker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ducker1 {
+            get {
+                object obj = ResourceManager.GetObject("ducker1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondtrex {
             get {
                 object obj = ResourceManager.GetObject("fondtrex", resourceCulture);

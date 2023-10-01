@@ -110,7 +110,7 @@
             // 
             // trex
             // 
-            this.trex.Image = ((System.Drawing.Image)(resources.GetObject("trex.Image")));
+            this.trex.Image = global::T_Rex_Game.Properties.Resources.running;
             this.trex.Location = new System.Drawing.Point(165, 367);
             this.trex.Name = "trex";
             this.trex.Size = new System.Drawing.Size(40, 43);
